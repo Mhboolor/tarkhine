@@ -18,7 +18,7 @@ gitHub : "https://github.com/mhh-hazrati8068",
 
 Front-End Developer : {
 fullName : "Kourosh Eidivandi",
-email : "mKouroshjs79@gmail.com",
+email : "Kouroshjs79@gmail.com",
 gitHub : "https://github.com/Kouroshjs",
 }
 
