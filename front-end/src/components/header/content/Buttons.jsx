@@ -4,13 +4,13 @@ import { AiOutlineShoppingCart, AiOutlineUser } from "react-icons/ai";
 function Buttons() {
   return (
     <div className="flex items-center justify-center gap-2">
-      <button className="items-center justify-center p-8 rounded-4 bg-tint-1 text-primary hidden lg:flex">
+      <button className="flex items-center justify-center p-8 rounded-4 bg-tint-1 text-primary">
         <MdSearch />
       </button>
-      <button className="flex items-center justify-center p-8 rounded-4 bg-tint-1 text-primary">
+      <button className="flex items-center justify-center p-8 rounded-4 bg-tint-1">
         <AiOutlineShoppingCart />
       </button>
-      <button className="flex items-center justify-center p-8 rounded-4 bg-tint-1 text-primary">
+      <button className="flex items-center justify-center p-8 rounded-4 bg-tint-1">
         <AiOutlineUser />
       </button>
     </div>
