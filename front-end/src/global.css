@@ -13,3 +13,29 @@
     font-family: "Estedad";
   }
 }
+
+/* Hero Slider Costum Styling Start */
+.hero-slider .swiper-button-next:after,
+.swiper-button-prev:after {
+  color: white;
+  font-size: 32px !important;
+}
+.hero-slider .swiper-pagination {
+  background-image: url("../src/assets/images/heroSlider/nav-bg-slider.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 0 !important;
+  text-align: center;
+}
+.hero-slider .swiper-pagination-bullet-active {
+  background: #417f56;
+  padding: 5px;
+}
+@media screen and (max-width: 662px) {
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+}
+/* Hero Slider Costum Styling End */

@@ -16,7 +16,7 @@ function Header() {
       <div className="container m-auto flex items-center justify-between py-4 px-4 md:px-0">
         <MenuIcon showMenuHandler={showMenuHandler} />
         <Logo />
-        <div className={`absolute left-0 top-0 w-full h-full bg-black/10 ${showMenu ? "flex" : "hidden"} lg:hidden`} onClick={showMenuHandler}></div>
+        <div className={`absolute left-0 top-0 w-full h-full z-10 bg-black/10 ${showMenu ? "flex" : "hidden"} lg:hidden`} onClick={showMenuHandler}></div>
         <Navbar showMenu={showMenu} showMenuHandler={showMenuHandler}/>
         <Buttons />
       </div>
