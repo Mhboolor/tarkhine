@@ -56,7 +56,6 @@ export default {
         card: " 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 3px 6px 0px rgba(0, 0, 0, 0.10), 0px 11px 11px 0px rgba(0, 0, 0, 0.09), 0px 24px 14px 0px rgba(0, 0, 0, 0.05), 0px 42px 17px 0px rgba(0, 0, 0, 0.01), 0px 66px 18px 0px rgba(0, 0, 0, 0.00)",
       },
       colors: {
-        
         primary: "#417F56",
         white: "#ffffff",
         black: "#0C0C0C",
