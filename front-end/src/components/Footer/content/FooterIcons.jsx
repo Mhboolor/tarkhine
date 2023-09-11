@@ -6,9 +6,9 @@ import {SlSocialInstagram} from 'react-icons/sl'
 const FooterIcons = () => {
   return (
       <div className='footer-icons flex w-full gap-2 items-center'>
-          <a href="#"><FiTwitter className='text-body-md'/></a>
-          <a href="#"><SlSocialInstagram className='text-body-md'/></a>
-          <a href="#"><LiaTelegramPlane className='text-body-lg'/></a>
+          <a href="#"><FiTwitter className='text-body-md lg:text-body-lg'/></a>
+          <a href="#"><SlSocialInstagram className='text-body-md lg:text-body-lg'/></a>
+          <a href="#"><LiaTelegramPlane className='text-body-lg lg:text-body-xl'/></a>
     </div>
   )
 }

@@ -5,7 +5,7 @@ import Button from '../../common/Button/Button'
 const FooterLeftSection = () => {
     return (
         <section className='footer-left-container flex flex-col gap-4'>
-            <h5>پیام به ترخینه</h5>
+            <h5 className='flex text-h5 font-bold'>پیام به ترخینه</h5>
             <div className='flex gap-6'>
                 {/* right section */}
                 <div className='flex flex-col gap-3 items-center'>
