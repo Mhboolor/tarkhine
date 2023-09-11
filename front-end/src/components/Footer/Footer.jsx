@@ -1,7 +1,8 @@
 import React from 'react'
 import imageSrc from '../../assets/images/footer-desktop.png'
-import FooterRightList from './FooterRightList';
-import FooterCenterList from './FooterCenterList';
+import FooterRightList from './content/FooterRightSection';
+import FooterCenterList from './content/FooterCenterSection';
+import FooterLeftSection from './content/FooterLeftSection';
 
 const Footer = () => {
   console.log(imageSrc);
@@ -10,7 +11,7 @@ const Footer = () => {
       <div className="footer-content text-white w-full flex justify-evenly bg-black/60 p-4">
         <FooterRightList />
         <FooterCenterList />
-          
+        <FooterLeftSection />
       </div>
     </footer>
   )
