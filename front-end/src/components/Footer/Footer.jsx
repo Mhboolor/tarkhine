@@ -11,8 +11,8 @@ const Footer = () => {
       className="
       bg-[url('src/assets/images/footer-mobile.png')]
       lg:bg-[url('src/assets/images/footer-desktop.png')]
-      bg-center w-full">
-      <div className="footer-content text-white w-full flex justify-evenly bg-black/60 p-4">
+      bg-center w-full h-max bg-cover">
+      <div className="footer-content text-white w-full flex justify-start gap-14 lg:gap-0 md:justify-evenly bg-black/70 p-9">
         <FooterRightList />
         <FooterCenterList />
         <FooterLeftSection />

@@ -4,7 +4,7 @@ import Button from '../../common/Button/Button'
 
 const FooterLeftSection = () => {
     return (
-        <section className='footer-left-container flex flex-col gap-4'>
+        <section className='footer-left-container flex-col gap-4 relative hidden lg:flex'>
             <h5 className='flex text-h5 font-bold'>پیام به ترخینه</h5>
             <div className='flex gap-6'>
                 {/* right section */}
@@ -18,7 +18,9 @@ const FooterLeftSection = () => {
                     <textarea id="footer_texarea" placeholder='پیام شما' className='placeholder:text-gray-1 h-full resize-none outline-none p-3 bg-transparent border-gray-7 border-2 rounded-4 w-[276px]'></textarea>
                 </div>
             </div>
-            <Button width='w-[140px]' bgColor='transparent' borderColor='gray-7' textColor='gray-1' text='ارسال پیام' className='absolute left-0'/>
+            <div className='w-full flex justify-end'>
+                <Button width='w-[140px]' bgColor='transparent' borderColor='gray-7' textColor='gray-1' text='ارسال پیام' />
+            </div>
         </section>
     )
 }

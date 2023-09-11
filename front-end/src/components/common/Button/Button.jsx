@@ -4,6 +4,8 @@ const Button = (props) => {
     const {bgColor, borderColor, textColor, width, text} = props
   return (
       <button className={`
+      relative
+      left-0
       border-2 bg-${bgColor} 
       outline-none 
       py-2
