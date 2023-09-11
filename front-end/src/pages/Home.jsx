@@ -1,7 +1,9 @@
+import TarkhineBranches from "../components/TarkhineBranches/TarkhineBranches"
+
 function Home() {
   return (
     <div>
-      Home
+      <TarkhineBranches />
     </div>
   )
 }
