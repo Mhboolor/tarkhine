@@ -32,10 +32,24 @@
   background: #417f56;
   padding: 5px;
 }
+/* Hero Slider Costum Styling End */
+
+/* Product Slider Costum Styling Start */
+.product-slider .swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #353535;
+  font-size: 16px !important;
+  padding: 4px 6px;
+  z-index: 10;
+  border-radius: 4px;
+  border: 1px solid #cbcbcb;
+  background: #fff;
+}
+/* Product Slider Costum Styling End */
+
 @media screen and (max-width: 662px) {
   .swiper-button-next:after,
   .swiper-button-prev:after {
     display: none;
   }
 }
-/* Hero Slider Costum Styling End */
