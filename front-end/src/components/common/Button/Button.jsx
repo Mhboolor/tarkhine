@@ -2,7 +2,6 @@ const Button = ({
   bgColor = "white",
   borderColor = "primary",
   textColor,
-  width,
   text,
   px = 4,
   py = 2,
@@ -15,14 +14,12 @@ const Button = ({
       left-0
       border
       bg-${bgColor} 
-      outline-none 
-      ${py}
-      ${px}
+      py-${py}
+      px-${px}
       border-${borderColor} 
       text-${textColor} 
       text-${textSize}
       rounded-4
-      ${width} 
       `}
     >
       {text}
