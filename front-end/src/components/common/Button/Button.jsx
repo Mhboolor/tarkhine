@@ -6,18 +6,21 @@ const Button = ({
   text,
   px = 4,
   py = 2,
+  textSize
 }) => {
   return (
     <button
       className={`
       relative
       left-0
-      border bg-${bgColor} 
+      border
+      bg-${bgColor} 
       outline-none 
-      py-2
-      px-4
+      ${py}
+      ${px}
       border-${borderColor} 
       text-${textColor} 
+      text-${textSize}
       rounded-4
       ${width} 
       `}
