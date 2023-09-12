@@ -25,11 +25,11 @@ const TarkhineBranchCard = ({ img, branchTitle, branchAddress }) => {
                 </div>
                 <img src={img} alt="" className="w-full h-full rounded-t-4 " />
             </div>
-            <div className="branch-card__text pb-6 gap-4 flex items-center justify-center flex-col w-[60%] md:w-full">
+            <div className="branch-card__text md:pb-6 gap-4 flex items-center justify-center flex-col w-[60%] md:w-full">
                 <div className='flex items-center justify-center flex-col'>
                     <h3 className="text-body-sm font-semibold md:text-body-xl">{branchTitle}</h3>
                     <p className="text-center text-caption-sm md:text-caption-lg mb-2">{branchAddress}</p>
-                    <div className={isHovered ? 'opacity-100' : 'opacity-0'}>
+                    <div className={` ${isHovered ? 'block' : 'hidden' }`}>
                         <Button text='صفحه شعبه   >  ' px={16} />
                     </div>
                 </div>
