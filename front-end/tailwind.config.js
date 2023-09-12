@@ -3,16 +3,6 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        mobileBranch1: 'url("../src/assets/images/branches/branch1-mobile.png")',
-        desktopBranch1: 'url("../src/assets/images/branches/branch1-desktop.png")',
-        mobileBranch2: 'url("../src/assets/images/branches/branch2-mobile.png")',
-        desktopBranch2: 'url("../src/assets/images/branches/branch2-desktop.png")',
-        mobileBranch3: 'url("../src/assets/images/branches/branch2-mobile.png")',
-        desktopBranch3: 'url("../src/assets/images/branches/branch3-desktop.png")',
-        mobileBranch4: 'url("../src/assets/images/branches/branch3-mobile.png")',
-        desktopBranch4: 'url("../src/assets/images/branches/branch1-desktop.png")',
-      },
       borderRadius: {
         4: "4px",
         8: "8px",

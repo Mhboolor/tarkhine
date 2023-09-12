@@ -4,32 +4,24 @@ import TarkhineBranchCard from './TarkhineBranchCard'
 const TarkhineBranches = () => {
     const branchDetails = [
         {
-            imgDesktop: 'mobileBranch1',
-            imgMobile: 'mobileBranch1',
-            alt: 'شعبه اکباتان',
+            img: "../src/assets/images/branches/branch1-desktop.png",
             branchTitle: 'شعبه اکباتان',
             branchAddress: 'شهرک اکباتان، فاز ۳، مجتمع اداری کوروش، طبقه سوم'
         },
         {
-            imgDesktop: 'desktopBranch2',
-            imgMobile: 'mobileBranch2',
-            alt: 'شعبه چالوس',
+            img: "../src/assets/images/branches/branch2-desktop.png",
             branchTitle: 'شعبه چالوس',
-            branchAddress: 'چالوس، خیابان ۱۷ شهریور، بعد کوچه کوروش، جنب داروخانه دکتر میلانی   '
+            branchAddress: 'چالوس، خیابان ۱۷ شهریور، بعد کوچه کوروش   '
         },
         {
-            imgDesktop: 'desktopBranch3',
-            imgMobile: 'mobileBranch3',
-            alt: 'شعبه اقدسیه',
+            img: "../src/assets/images/branches/branch3-desktop.png",
             branchTitle: 'شعبه اقدسیه',
-            branchAddress: 'خیابان اقدسیه، نرسیده به میدان خیام، پلاک ۸'
+            branchAddress: 'خیابان اقدسیه، نرسیده به میدان خیام'
         },
         {
-            imgDesktop: 'desktopBranch4',
-            imgMobile: 'mobileBranch4',
-            alt: 'شعبه ونک',
+            img: "../src/assets/images/branches/branch4-desktop.png",
             branchTitle: 'شعبه ونک',
-            branchAddress: 'میدان ونک، خیابان فردوسی، نبش کوچه نیلوفر، پلاک ۲۶'
+            branchAddress: 'میدان ونک، خیابان فردوسی، نبش کوچه نیلوفر'
         },
     ]
     return (

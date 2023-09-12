@@ -1,4 +1,4 @@
-import TarkhineBranches from "../components/TarkhineBranches/TarkhineBranches"
+import TarkhineBranches from "../components/Home/TarkhineBranches/TarkhineBranches"
 
 function Home() {
   return (

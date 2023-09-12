@@ -1,7 +1,6 @@
 import React from 'react'
 
-const Button = (props) => {
-    const {bgColor, borderColor, textColor, width, text} = props
+const Button = ({bgColor= 'white', borderColor = 'primary', textColor, width, text, px= 4, py= 2}) => {
   return (
       <button className={`
       relative
