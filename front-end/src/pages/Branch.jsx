@@ -31,11 +31,24 @@ function Branch() {
     },
   ];
 
+
+  const products = [
+    {id : 1 , title : "دلمه برگ کلم" , price : "209,000" , off : "8" , rate : "4.2" , image : "../src/assets/images/branch/products/food.jpg"},
+    {id : 2 , title : "بادمجان شکم‌پر" , price : "209,000" , off : "8" , rate : "4.2" , image : "../src/assets/images/branch/products/food.jpg"},
+    {id : 3 , title : "کالزونه اسفناج" , price : "209,000" , off : "8" , rate : "4.2" , image : "../src/assets/images/branch/products/food.jpg"},
+    {id : 4 , title : "پیتزا قارچ" , price : "209,000" , off : "8" , rate : "4.2" , image : "../src/assets/images/branch/products/food.jpg"},
+    {id : 5 , title : "راتاتویی" , price : "209,000" , off : "8" , rate : "4.2" , image : "../src/assets/images/branch/products/food.jpg"},
+    {id : 6 , title : "پیتزا پپرونی" , price : "209,000" , off : "8" , rate : "4.2" , image : "../src/assets/images/branch/products/food.jpg"},
+    {id : 7 , title : "پنینی اسفناج" , price : "209,000" , off : "8" , rate : "4.2" , image : "../src/assets/images/branch/products/food.jpg"},
+  ]
+
   return (
-    <div className="flex flex-col gap-12">
+    <div className="flex flex-col gap-2">
       <HeroSlider data={slider} />
       <SearchBox/>
-      <ProductSlider/>
+      <ProductSlider products={products} title={"پیشنهاد ویژه"}/>
+      <ProductSlider products={products} title={"غذاهای محبوب"} containerBg={"bg-shade-2"} titleColor={"text-white"}/>
+      <ProductSlider products={products} title={"غذاهای غیر ایرانی"}/>
     </div>
   );
 }

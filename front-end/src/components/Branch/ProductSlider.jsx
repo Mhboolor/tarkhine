@@ -5,13 +5,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+import FoodCard from "../common/FoodCard/FoodCard";
 
-function Slider({ title, titleColor, containerBg, products }) {
+function Slider({ products, title, containerBg, titleColor }) {
   return (
     <div
-      className={`flex flex-col gap-6 pr-4 lg:pr-28 ${
+      className={`flex flex-col gap-4 px-4 py-12 lg:pr-28 ${
         containerBg && containerBg
-      }`}
+      }
+        `}
     >
       <div
         className={`text-h6 md:text-h4 font-bold leading-140 text-gray-8 ${
@@ -23,9 +25,9 @@ function Slider({ title, titleColor, containerBg, products }) {
       <Swiper
         navigation={true}
         modules={[Navigation]}
-        className="w-full h-48 md:h-96 product-slider"
+        className="w-full product-slider"
         slidesPerView={2}
-        spaceBetween={10}
+        spaceBetween={20}
         pagination={{
           clickable: true,
         }}
@@ -43,12 +45,14 @@ function Slider({ title, titleColor, containerBg, products }) {
           },
           1650: {
             slidesPerView: 5,
-            spaceBetween: 0,
+            spaceBetween: 40,
           },
         }}
       >
         {products.map((product) => (
-          <SwiperSlide key={product.id}></SwiperSlide>
+          <SwiperSlide key={product.id}>
+            <FoodCard {...product} />
+          </SwiperSlide>
         ))}
       </Swiper>
     </div>

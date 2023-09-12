@@ -15,8 +15,11 @@
 }
 
 /* Hero Slider Costum Styling Start */
-.hero-slider .swiper-button-next:after,
-.swiper-button-prev:after {
+.hero-slider .swiper-button-next:after {
+  color: white;
+  font-size: 32px !important;
+}
+.hero-slider .swiper-button-prev:after {
   color: white;
   font-size: 32px !important;
 }
@@ -35,8 +38,16 @@
 /* Hero Slider Costum Styling End */
 
 /* Product Slider Costum Styling Start */
-.product-slider .swiper-button-next:after,
-.swiper-button-prev:after {
+.product-slider .swiper-button-next:after {
+  color: #353535;
+  font-size: 16px !important;
+  padding: 4px 6px;
+  z-index: 10;
+  border-radius: 4px;
+  border: 1px solid #cbcbcb;
+  background: #fff;
+}
+.product-slider .swiper-button-prev:after {
   color: #353535;
   font-size: 16px !important;
   padding: 4px 6px;
