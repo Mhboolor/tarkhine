@@ -5,9 +5,9 @@ import TarkhineBranches from "../components/Home/TarkhineBranches/TarkhineBranch
 function Home() {
   return (
     <div className="flex flex-col gap-5">
-      <HeroSlider/>
+      {/* <HeroSlider/>
       <SearchBox />
-      <TarkhineBranches />
+      <TarkhineBranches /> */}
     </div>
   )
 }
