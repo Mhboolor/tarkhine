@@ -1,11 +1,18 @@
-import React from 'react'
-
-const Button = ({bgColor= 'white', borderColor = 'primary', textColor, width, text, px= 4, py= 2}) => {
+const Button = ({
+  bgColor = "white",
+  borderColor = "primary",
+  textColor,
+  width,
+  text,
+  px = 4,
+  py = 2,
+}) => {
   return (
-      <button className={`
+    <button
+      className={`
       relative
       left-0
-      border-2 bg-${bgColor} 
+      border bg-${bgColor} 
       outline-none 
       py-2
       px-4
@@ -13,10 +20,11 @@ const Button = ({bgColor= 'white', borderColor = 'primary', textColor, width, te
       text-${textColor} 
       rounded-4
       ${width} 
-      `}>
-          {text}
-      </button>
-  )
-}
+      `}
+    >
+      {text}
+    </button>
+  );
+};
 
-export default Button
+export default Button;
