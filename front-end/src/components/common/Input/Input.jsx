@@ -1,20 +1,18 @@
-import React from 'react'
+const Input = ({
+    border = "border",
+  borderColor,
+  textColor,
+  width,
+  height,
+  placeholderTextColor,
+  type,
+  placeholder,
+}) => {
 
-const Input = (props) => {
-    const {
-        borderColor,
-        textColor, width,
-        height,
-        placeholderTextColor,
-        type,
-        placeholder
-    } = props
-    console.log(placeholderTextColor);
-    
-    return (
-        <input
-            className={`
-            border-2
+  return (
+    <input
+      className={`
+            ${border}
             bg-transparent 
             outline-none
             py-2
@@ -26,11 +24,10 @@ const Input = (props) => {
             h-[${height}]
             placeholder:${placeholderTextColor}
             `}
+      type={type}
+      placeholder={placeholder}
+    />
+  );
+};
 
-            type={type}
-            placeholder={placeholder}
-        />
-    )
-}
-
-export default Input
+export default Input;
