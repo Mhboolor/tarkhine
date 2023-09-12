@@ -19,7 +19,7 @@ function HeroSlider() {
   return (
     <Swiper
       autoplay={{
-        delay: 2500,
+        delay: 3500,
         disableOnInteraction: false,
       }}
       loop={true}

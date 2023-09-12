@@ -101,6 +101,22 @@ export default {
           8: "#353535",
         }
       },
+      animation: {
+        "move-right": "move-right 3s linear infinite",
+        "move-left": "move-left 3s linear infinite",
+      },
+      keyframes: {
+        "move-right": {
+          "0%": { transform: "translateX(0px)" },
+          "50%": { transform: "translateX(20px)" },
+          "100%": { transform: "translateX(0px)" },
+        },
+        "move-left": {
+          "0%": { transform: "translateX(0px)" },
+          "50%": { transform: "translateX(-20px)" },
+          "100%": { transform: "translateX(0px)" },
+        },
+      },
     },
   },
   plugins: [],
