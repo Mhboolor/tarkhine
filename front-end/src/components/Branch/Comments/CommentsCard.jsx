@@ -3,8 +3,7 @@ import { CiStar } from 'react-icons/ci'
 
 const CommentsCard = ({name, date, text, point}) => {
     return (
-        // delete the margin top
-        <div className='border border-gray-5 rounded-8 py-4 px-5 mt-7 '>
+        <div className='border border-gray-5 rounded-8 py-4 px-5'>
             <div className='flex w-full gap-2'>
                 <div className='flex flex-col items-center gap-1'>
                     <span className={`rounded-[50%] w-14 h-14 md:w-18 md:h-18 lg:w-24 lg:h-24 bg-[url("../src/assets/images/comments/pesar.png")] bg-center bg-cover`}></span>
