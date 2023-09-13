@@ -64,3 +64,11 @@
     display: none;
   }
 }
+
+/* Comments Slider Costum Styling Start */
+
+.comments-slider .swiper-pagination-bullet {}
+
+.comments-slider .swiper-pagination-bullet-active {}
+
+/* Comments Slider Costum Styling End */

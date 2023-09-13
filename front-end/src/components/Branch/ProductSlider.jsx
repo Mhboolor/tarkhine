@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-import FoodCard from "../common/FoodCard/FoodCard";
+import FoodCard from "../common/FoodCard/FoodCard"; 
 
 function Slider({ products, title, containerBg, titleColor }) {
   return (

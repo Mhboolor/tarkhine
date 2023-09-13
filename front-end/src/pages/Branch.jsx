@@ -3,6 +3,9 @@ import ProductSlider from "../components/Branch/ProductSlider";
 import SearchBox from "../components/common/searchBox/SearchBox";
 import Button from "../components/common/Button/Button";
 import Title from "../components/common/Title/Title"
+import CommentsCard from "../components/Branch/Comments/CommentsCard";
+import CommentsSlider from "../components/Branch/Comments/CommentsSlider";
+import { comment } from "postcss";
 
 function Branch() {
   const slider = [
@@ -42,6 +45,52 @@ function Branch() {
     {id : 7 , title : "پنینی اسفناج" , price : "209,000" , off : "8" , rate : "4.2" , image : "../src/assets/images/branch/products/food.jpg"},
   ]
 
+  const comments = [
+    {
+      id: 1,
+      name: 'سردار وظیفه',
+      date: '۲۱ مرداد ۱۴۰۱',
+      text: 'از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم.      ',
+      point: '۴',
+    },
+    {
+      id: 2,
+      name: 'هانا سبحانی',
+      date: '۶ بهمن ۱۴۰۱',
+      text: 'از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم.      ',
+      point: '5',
+    },
+    {
+      id: 3,
+      name: 'قلمراد ممالکی',
+      date: '۳ آذر ۱۴۰۱',
+      text: 'از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم.      ',
+      point: '۳',
+    },
+    {
+      id: 4,
+      name: 'برزو خان',
+      date: '۲ فروردین ۱۴۰۲',
+      text: 'از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم.      ',
+      point: '۵',
+    },
+    {
+      id: 5,
+      name: 'سما نوروزی',
+      date: '۴ اردیبهشت ۱۴۰۲',
+      text: 'از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم.      ',
+      point: '۴',
+    },
+    {
+      id: 6,
+      name: 'سالار عقیلی',
+      date: '۶ مهر ۱۴۰۱',
+      text: 'از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم.      ',
+      point: '۳',
+    },
+  ]
+
+
   return (
     <div className="flex flex-col gap-2">
       <HeroSlider data={slider} />
@@ -57,7 +106,8 @@ function Branch() {
         
       </div>
       <div>
-      <Title title={"نظرات کاربران"}/>
+        <Title title={"نظرات کاربران"} />
+        <CommentsSlider comments={comments}/>
       </div>
     </div>
   );
