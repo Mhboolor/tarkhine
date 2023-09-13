@@ -1,4 +1,3 @@
-import React from 'react'
 import { CiStar } from 'react-icons/ci'
 
 const CommentsCard = ({name, date, text, point}) => {
