@@ -10,13 +10,13 @@ const CommentsCard = ({name, date, text, point}) => {
                     <span className='text-caption-sm md:text-c text-center w-max'>{name}</span>
                     <span className='text-caption-sm text-center'>{date}</span>
                 </div>
-                <div className='flex w-full flex-col'>
+                <div className='flex w-full flex-col h-full'>
                     <div>
                         <p className='w-full text-justify text-caption-md leading-180 md:text-body-md lg:text-body-lg'>{text}</p>
                     </div>
-                    <div className='w-full flex gap-2 items-bottom justify-end'>
-                        <span className='w-3 h-3 md:w-5 md:h-5 lg:w-7 lg:h-7'><CiStar /></span>
-                        <span className='text-body-sm leading-180 md:text-body-md lg:text-body-lg'>{point}</span>
+                    <div className='w-full flex gap-1 items-center justify-end'>
+                        <span className=''><CiStar className='text-body-sm leading-180 md:text-body-md lg:text-body-lg'/></span>
+                        <span className='text-body-sm md:text-body-md lg:text-body-lg'>{point}</span>
                     </div>
                 </div>
             </div>
