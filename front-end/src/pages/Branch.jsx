@@ -3,7 +3,7 @@ import ProductSlider from "../components/Branch/ProductSlider";
 import SearchBox from "../components/common/searchBox/SearchBox";
 import Button from "../components/common/Button/Button";
 import Title from "../components/common/Title/Title"
-import CommentsCard from "../components/Branch/Comments/CommentsCard";
+import CommentsCard from "../components/Branch/Comments/CommentCard";
 import CommentsSlider from "../components/Branch/Comments/CommentsSlider";
 import { comment } from "postcss";
 
@@ -36,13 +36,13 @@ function Branch() {
     },
   ];
   const products = [
-    {id : 1 , title : "دلمه برگ کلم" , price : "209,000" , off : "8" , rate : "4.2" , image : "../src/assets/images/branch/products/food.jpg"},
-    {id : 2 , title : "بادمجان شکم‌پر" , price : "209,000" , off : "8" , rate : "4.2" , image : "../src/assets/images/branch/products/food.jpg"},
-    {id : 3 , title : "کالزونه اسفناج" , price : "209,000" , off : "8" , rate : "4.2" , image : "../src/assets/images/branch/products/food.jpg"},
-    {id : 4 , title : "پیتزا قارچ" , price : "209,000" , off : "8" , rate : "4.2" , image : "../src/assets/images/branch/products/food.jpg"},
-    {id : 5 , title : "راتاتویی" , price : "209,000" , off : "8" , rate : "4.2" , image : "../src/assets/images/branch/products/food.jpg"},
-    {id : 6 , title : "پیتزا پپرونی" , price : "209,000" , off : "8" , rate : "4.2" , image : "../src/assets/images/branch/products/food.jpg"},
-    {id : 7 , title : "پنینی اسفناج" , price : "209,000" , off : "8" , rate : "4.2" , image : "../src/assets/images/branch/products/food.jpg"},
+    { id: 1, title: "دلمه برگ کلم", price: "209,000", off: "8", rate: "4.2", image: "../src/assets/images/branch/products/food.jpg" },
+    { id: 2, title: "بادمجان شکم‌پر", price: "209,000", off: "8", rate: "4.2", image: "../src/assets/images/branch/products/food.jpg" },
+    { id: 3, title: "کالزونه اسفناج", price: "209,000", off: "8", rate: "4.2", image: "../src/assets/images/branch/products/food.jpg" },
+    { id: 4, title: "پیتزا قارچ", price: "209,000", off: "8", rate: "4.2", image: "../src/assets/images/branch/products/food.jpg" },
+    { id: 5, title: "راتاتویی", price: "209,000", off: "8", rate: "4.2", image: "../src/assets/images/branch/products/food.jpg" },
+    { id: 6, title: "پیتزا پپرونی", price: "209,000", off: "8", rate: "4.2", image: "../src/assets/images/branch/products/food.jpg" },
+    { id: 7, title: "پنینی اسفناج", price: "209,000", off: "8", rate: "4.2", image: "../src/assets/images/branch/products/food.jpg" },
   ]
 
   const comments = [
@@ -94,20 +94,20 @@ function Branch() {
   return (
     <div className="flex flex-col gap-2">
       <HeroSlider data={slider} />
-      <SearchBox/>
-      <ProductSlider products={products} title={"پیشنهاد ویژه"}/>
-      <ProductSlider products={products} title={"غذاهای محبوب"} containerBg={"bg-shade-2"} titleColor={"text-white"}/>
-      <ProductSlider products={products} title={"غذاهای غیر ایرانی"}/>
+      <SearchBox />
+      <ProductSlider products={products} title={"پیشنهاد ویژه"} />
+      <ProductSlider products={products} title={"غذاهای محبوب"} containerBg={"bg-shade-2"} titleColor={"text-white"} />
+      <ProductSlider products={products} title={"غذاهای غیر ایرانی"} />
       <div className="flex items-center justify-center">
-        <Button text={"مشاهده منوی کامل"} textColor={"primary"}/>
+        <Button text={"مشاهده منوی کامل"} textColor={"primary"} />
       </div>
       <div>
-        <Title title={"شعبه اکباتان"}/>
-        
+        <Title title={"شعبه اکباتان"} />
+
       </div>
       <div>
         <Title title={"نظرات کاربران"} />
-        <CommentsSlider comments={comments}/>
+        <CommentsSlider comments={comments} />
       </div>
     </div>
   );

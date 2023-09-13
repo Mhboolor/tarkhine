@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
-import CommentsCard from "./CommentsCard";
+import CommentsCard from "./CommentCard";
 
 
 const CommentsSlider = ({ comments }) => {
@@ -17,7 +17,7 @@ const CommentsSlider = ({ comments }) => {
                 className="w-full comments-slider"
                 slidesPerView={1.5}
                 pagination={{
-                  clickable: true,
+                    clickable: true,
                 }}
                 autoplay={{ delay: 3000 }}
             >
