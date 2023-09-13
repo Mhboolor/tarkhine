@@ -99,6 +99,9 @@ export default {
           6: "#757575",
           7: "#717171",
           8: "#353535",
+        },
+        TransitionEvent: {
+          
         }
       },
       animation: {

@@ -7,8 +7,8 @@ const CommentsCard = ({name, date, text, point}) => {
             <div className='flex w-full gap-2'>
                 <div className='flex flex-col items-center gap-1'>
                     <span className={`rounded-[50%] w-14 h-14 md:w-18 md:h-18 lg:w-24 lg:h-24 bg-[url("../src/assets/images/comments/pesar.png")] bg-center bg-cover`}></span>
-                    <span className='text-caption-sm md:text-c text-center w-max'>{name}</span>
-                    <span className='text-caption-sm text-center'>{date}</span>
+                    <span className='text-caption-sm md:text-caption-md lg:text-caption-lg text-gray-7 text-center w-max'>{name}</span>
+                    <span className='text-caption-sm md:text-caption-md lg:text-caption-lg text-gray-7 text-center'>{date}</span>
                 </div>
                 <div className='flex w-full flex-col h-full'>
                     <div>
