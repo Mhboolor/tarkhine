@@ -14,7 +14,7 @@ const CommentsSlider = ({ comments }) => {
             <Swiper
                 spaceBetween={20}
                 modules={[Pagination, Autoplay]}
-                className="w-full comments-slider"
+                className="w-full comments-slider my-4"
                 slidesPerView={1.5}
                 pagination={{
                     clickable: true,

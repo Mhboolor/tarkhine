@@ -5,7 +5,8 @@ const Button = ({
   text,
   px = 4,
   py = 2,
-  textSize
+  textSize,
+  width
 }) => {
   return (
     <button
@@ -20,6 +21,7 @@ const Button = ({
       text-${textColor} 
       text-${textSize}
       rounded-4
+      ${width}
       `}
     >
       {text}

@@ -42,7 +42,7 @@ const TarkhineBranchCard = ({ img, branchTitle, branchAddress }) => {
             {branchAddress}
           </p>
           <div className={`hidden ${isHovered ? "md:block" : "md:hidden"}`}>
-            <Button text="صفحه شعبه   >  " py={1}  />
+            <Button text="صفحه شعبه   >  " py={1} width={'full'} />
           </div>
         </div>
       </div>
