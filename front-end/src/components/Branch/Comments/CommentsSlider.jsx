@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import CommentsCard from "./CommentsCard";
 
 
@@ -12,36 +12,14 @@ const CommentsSlider = ({ comments }) => {
     return (
         <div className="px-4 py-2 lg:pr-28">
             <Swiper
-                spaceBetween={10}
-                navigation={true}
-                modules={[Pagination]}
+                spaceBetween={20}
+                modules={[Pagination, Autoplay]}
                 className="w-full comments-slider"
                 slidesPerView={1.5}
                 pagination={{
                   clickable: true,
                 }}
-                breakpoints={{
-                    480: {
-                        slidesPerView: 2,
-                        spaceBetween : {}
-                    },
-                    640: {
-                        slidesPerView: 2.5,
-                        spaceBetween: 10,
-                      },
-                      768: {
-                        slidesPerView: 3,
-                        spaceBetween: 10,
-                      },
-                      1024: {
-                        slidesPerView: 2.5,
-                        spaceBetween: 10,
-                      },
-                      1280: {
-                        slidesPerView: 2.5,
-                        spaceBetween: 30,
-                      },
-                }}
+                autoplay={{ delay: 3000 }}
             >
                 {comments.map(comment => (
                     <SwiperSlide>
