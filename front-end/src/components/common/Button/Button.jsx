@@ -26,8 +26,8 @@ const Button = ({
       ${width}'
       `}
     >
-      {text}
       {icon}
+      {text}
     </button>
   );
 };
