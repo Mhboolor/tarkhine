@@ -34,7 +34,7 @@ function Home() {
 
   return (
     <div className="flex flex-col gap-5">
-      <HeroSlider data={slider}/>
+      <HeroSlider data={slider} button={"سفارش آنلاین غذا"}/>
       <SearchBox />
       <TarkhineBranches />
     </div>

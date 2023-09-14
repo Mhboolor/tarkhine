@@ -4,6 +4,7 @@ import SearchBox from "../components/common/searchBox/SearchBox";
 import Button from "../components/common/Button/Button";
 import Title from "../components/common/Title/Title";
 import CommentsSlider from "../components/Branch/Comments/CommentsSlider";
+import BranchSlider from "../components/common/BranchSlider/BranchSlider";
 
 function Branch() {
   const slider = [
@@ -30,6 +31,28 @@ function Branch() {
     {
       id: 5,
       title: "طعم بی‌نظیر طبیعت!",
+      image: "../src/assets/images/heroSlider/slide-5.jpg",
+    },
+  ];
+  const branchSlider = [
+    {
+      id: 1,
+      image: "../src/assets/images/heroSlider/slide-1.jpg",
+    },
+    {
+      id: 2,
+      image: "../src/assets/images/heroSlider/slide-2.jpg",
+    },
+    {
+      id: 3,
+      image: "../src/assets/images/heroSlider/slide-3.jpg",
+    },
+    {
+      id: 4,
+      image: "../src/assets/images/heroSlider/slide-4.jpg",
+    },
+    {
+      id: 5,
       image: "../src/assets/images/heroSlider/slide-5.jpg",
     },
   ];
@@ -139,7 +162,7 @@ function Branch() {
 
   return (
     <div className="flex flex-col gap-2">
-      <HeroSlider data={slider} />
+      <HeroSlider data={slider} button={"سفارش انلاین غذا"}/>
       <SearchBox />
       <ProductSlider products={products} title={"پیشنهاد ویژه"} />
       <ProductSlider
@@ -152,8 +175,9 @@ function Branch() {
       <div className="flex items-center justify-center">
         <Button text={"مشاهده منوی کامل"} textColor={"primary"} />
       </div>
-      <div>
+      <div className="flex flex-col gap-6">
         <Title title={"شعبه اکباتان"} />
+        <BranchSlider data={branchSlider}/>
       </div>
       <div>
         <Title title={"نظرات کاربران"} />
