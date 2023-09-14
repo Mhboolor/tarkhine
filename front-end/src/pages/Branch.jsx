@@ -5,6 +5,7 @@ import Button from "../components/common/Button/Button";
 import Title from "../components/common/Title/Title";
 import CommentsSlider from "../components/Branch/Comments/CommentsSlider";
 import BranchSlider from "../components/common/BranchSlider/BranchSlider";
+import InfoBox from "../components/Branch/InfoBox";
 
 function Branch() {
   const slider = [
@@ -162,7 +163,7 @@ function Branch() {
 
   return (
     <div className="flex flex-col gap-2">
-      <HeroSlider data={slider} button={"سفارش انلاین غذا"}/>
+      <HeroSlider data={slider} button={"سفارش انلاین غذا"} />
       <SearchBox />
       <ProductSlider products={products} title={"پیشنهاد ویژه"} />
       <ProductSlider
@@ -175,9 +176,10 @@ function Branch() {
       <div className="flex items-center justify-center">
         <Button text={"مشاهده منوی کامل"} textColor={"primary"} />
       </div>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col items-center justify-center gap-6 relative mb-24 lg:mb-32">
         <Title title={"شعبه اکباتان"} />
-        <BranchSlider data={branchSlider}/>
+        <BranchSlider data={branchSlider} />
+        <InfoBox />
       </div>
       <div>
         <Title title={"نظرات کاربران"} />
