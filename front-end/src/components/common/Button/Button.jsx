@@ -6,7 +6,8 @@ const Button = ({
   px = 4,
   py = 2,
   textSize,
-  width
+  width,
+  icon
 }) => {
   return (
     <button
@@ -14,6 +15,7 @@ const Button = ({
       relative
       left-0
       border
+      flex items-center gap-2
       bg-${bgColor} 
       py-${py}
       px-${px}
@@ -21,10 +23,11 @@ const Button = ({
       text-${textColor} 
       text-${textSize}
       rounded-4
-      ${width}
+      ${width}'
       `}
     >
       {text}
+      {icon}
     </button>
   );
 };
