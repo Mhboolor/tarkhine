@@ -17,7 +17,7 @@ function Header() {
         <MenuIcon showMenuHandler={showMenuHandler} />
         <Logo />
         <div
-          className={`absolute left-0 top-0 w-full h-full z-10 bg-black/10 ${
+          className={`absolute left-0 top-0 w-full h-full z-20 bg-black/10 ${
             showMenu ? "flex" : "hidden"
           } lg:hidden`}
           onClick={showMenuHandler}
