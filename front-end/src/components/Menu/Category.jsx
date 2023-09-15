@@ -23,16 +23,6 @@ const Category = () => {
             title: 'نوشیدنی',
             path: '/drinks'
         },
-        {
-            id: 5,
-            title: 'نوشیدنی',
-            path: '/drinks'
-        },
-        {
-            id: 6,
-            title: 'نوشیدنی',
-            path: '/drinks'
-        },
     ]
 
     return (
@@ -43,7 +33,7 @@ const Category = () => {
                         <li key={link.id} className=''>
                             <Link
                                 to='/branch'
-                                className={`cursor-pointer hover:scale-105 hover:text-primary text-gray-6 transition ease-in-out
+                                className={`cursor-pointer hover:scale-105 hover:text-primary transition ease-in-out
                                 ${link.id === 1 ?
                                         'text-caption-lg text-primary md:text-h5 after:bg-primary after:w-full after:absolute relative after:-bottom-2 after:left-0 after:h-[2px]'
                                         : ''}
