@@ -25,7 +25,7 @@ gitHub : "https://github.com/Kouroshjs",
 -------------------> Back-End <-------------------
 
 Back-End Developer : {
-fullName : "MohammadHosein Bolori",
+fullName : "Dariush Khazaei",
 email : "www.dariushkhazaei629@gmail.com",
 gitHub : "https://github.com/DariushJinx",
 }
