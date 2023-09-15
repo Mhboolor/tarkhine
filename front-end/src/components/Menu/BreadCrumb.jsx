@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import { Navigation, Pagination } from 'swiper/modules';
 
 
 
@@ -42,14 +41,9 @@ const BreadCrumb = () => {
     return (
         <>
             <Swiper
-                navigation={true}
-                modules={[Navigation]}
                 className="breadcrumb-slider w-full "
                 slidesPerView= "auto"
                 spaceBetween={10}
-                pagination={{
-                    clickable: true,
-                }}
             >
                 <div>
                     {breacCrumbItems.map((breadCrumb) => (

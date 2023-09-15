@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Category = () => {
@@ -20,16 +19,6 @@ const Category = () => {
         },
         {
             id: 4,
-            title: 'نوشیدنی',
-            path: '/drinks'
-        },
-        {
-            id: 5,
-            title: 'نوشیدنی',
-            path: '/drinks'
-        },
-        {
-            id: 6,
             title: 'نوشیدنی',
             path: '/drinks'
         },
