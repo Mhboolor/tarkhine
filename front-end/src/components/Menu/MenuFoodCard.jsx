@@ -19,7 +19,7 @@ const MenuFoodCard = () => {
                     </div>
                 </div>
                 <div className="flex justify-between">
-                    <span className='overflow-hidden text-caption-sm md:text-body-sm text-ellipsis whitespace-nowrap w-2/3'>یبسیسیببرنج سبزی کوفته لپع کوفت زهرمار</span>
+                    <span className='overflow-hidden text-caption-sm md:text-body-sm text-ellipsis whitespace-nowrap w-2/3'>سبزی کوفته گوشت مرغ ماهی سوسیس کالباس پاستا</span>
                     <span className='text-caption-sm md:text-body-lg'>۱۴۵,۰۰۰ تومان</span>
                 </div>
                 <div className='flex items-center justify-between'>
