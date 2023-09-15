@@ -1,9 +1,13 @@
 import { MdSearch } from "react-icons/md";
 
-function SearchBox() {
+const SearchBox = ({
+  px = 2,
+  mdDisplay = 'flex',
+  lgDisplay = 'flex'
+}) => {
   return (
-    <div className="px-4">
-      <div className="container m-auto flex items-center justify-between border border-gray-4 rounded-4 text-caption-md leading-180 text-gray-8 lg:hidden">
+    <div className={`px-${px}`}>
+      <div className={`container m-auto flex items-center justify-between border border-gray-4 rounded-4 text-caption-md leading-180 text-gray-8 md:${mdDisplay} lg:${lgDisplay}`}>
         <input
           type="text"
           placeholder="جستجو ..."
