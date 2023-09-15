@@ -3,13 +3,9 @@ import App from "../App";
 import Home from "../pages/Home";
 import Error404 from "../pages/Error404";
 import Branch from "../pages/Branch";
-<<<<<<< HEAD
-import Menu from "../pages/Menu";
-=======
 import Cart from "../pages/Cart";
 import Pay from "../components/Cart/Pay/Pay";
 import Complete from "../components/Cart/Complete/Complete";
->>>>>>> main
 
 export const router = createBrowserRouter([
   {
@@ -17,11 +13,6 @@ export const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error404 />,
     children: [
-<<<<<<< HEAD
-      { path: "/", element: <Home />},  
-      { path: "/branch", element: <Branch /> },
-      { path: "/menu", element: <Menu />}
-=======
       { path: "/", element: <Home /> },
       { path: "/branch", element: <Branch /> },
       {
@@ -32,7 +23,6 @@ export const router = createBrowserRouter([
           { path: "pay", element: <Pay /> },
         ],
       },
->>>>>>> main
     ],
   },
 ]);
