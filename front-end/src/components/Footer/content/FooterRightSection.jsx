@@ -1,18 +1,30 @@
-import FooterIcons from './FooterIcons'
-import { Link } from 'react-router-dom'
+import FooterIcons from "./FooterIcons";
+import { Link } from "react-router-dom";
 
 const FooterRightList = () => {
-    return (
-        <div className="footer-right  flex flex-col gap-2 md:gap-4">
-            <h2 className='text-caption-md md:text-body-xl md:font-bold'>دسترسی آسان</h2>
-            <ul className='flex flex-col gap-2 md:gap-4 text-caption-sm md:text-body-lg'>
-                <Link to='/branch'><li className='hover:text-primary hover:scale-110 transition ease-in-out'>پرسش‌های متداول</li></Link>
-                <Link to='/branch'><li className='hover:text-primary hover:scale-110 transition ease-in-out'>قوانین ترخینه</li></Link>
-                <Link to='/branch'><li className='hover:text-primary hover:scale-110 transition ease-in-out'>حریم خصوصی</li></Link>
-                <Link to='/branch'><li className='hover:text-primary hover:scale-110 transition ease-in-out'><FooterIcons /></li></Link>
-            </ul>
-        </div>
-    )
-}
+  return (
+    <div className="footer-right  flex flex-col gap-2 md:gap-4">
+      <h2 className="text-caption-md md:text-body-xl md:font-bold">
+        دسترسی آسان
+      </h2>
+      <ul className="flex flex-col gap-2 md:gap-4 text-caption-sm md:text-body-lg">
+        <li className="hover:text-primary transition ease-in-out">
+          <Link to="/branch">پرسش‌های متداول</Link>
+        </li>
+        <li className="hover:text-primary transition ease-in-out">
+          <Link to="/branch">قوانین ترخینه</Link>
+        </li>
+        <li className="hover:text-primary transition ease-in-out">
+          <Link to="/branch">حریم خصوصی</Link>
+        </li>
+        <li>
+          <Link to="/branch">
+            <FooterIcons />
+          </Link>
+        </li>
+      </ul>
+    </div>
+  );
+};
 
-export default FooterRightList
+export default FooterRightList;
