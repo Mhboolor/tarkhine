@@ -8,7 +8,7 @@ function BreadCrumb() {
 
   return (
     <>
-      <div className="text-h6 leading-180 text-primary items-center justify-center gap-2 py-4 flex md:hidden">
+      <div className="text-h6 leading-180 text-primary items-center justify-center gap-2 py-5 flex md:hidden">
         {location === "/cart" ? (
           <p className="flex items-center justify-center gap-1">
             <AiOutlineShoppingCart className="text-3xl" />
@@ -26,7 +26,7 @@ function BreadCrumb() {
           </p>
         )}
       </div>
-      <div className="text-h6 leading-180 text-gray-4 items-center justify-center gap-2 py-4 hidden md:flex">
+      <div className="text-h6 leading-180 text-gray-4 items-center justify-center gap-2 py-5 hidden md:flex">
         <p className="flex items-center justify-center gap-1 text-primary">
           <AiOutlineShoppingCart className="text-3xl" />
           سبد خرید

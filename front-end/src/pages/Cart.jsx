@@ -3,7 +3,7 @@ import BreadCrumb from "../components/Cart/BreadCrumb"
 
 function Cart() {
   return (
-    <div className="flex flex-col items-center justify-center container m-auto px-5 sm:px-0 text-center">
+    <div className="flex flex-col items-center justify-center container m-auto px-5 sm:px-0 text-center gap-4">
         <BreadCrumb/>
         <Outlet/>
     </div>
