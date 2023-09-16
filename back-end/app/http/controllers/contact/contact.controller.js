@@ -82,14 +82,14 @@ exports.answerContact = async (req, res, next) => {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "www.dariushkhazaei629@gmail.com",
-        pass: "xgcm jrbi haww bcxu",
+        user: "tarkhineproject@gmail.com",
+        pass: "xnfg epvp xmmm jspw",
       },
     });
     const mailOptions = {
-      from: "www.dariushkhazaei629@gamil.com",
+      from: "www.tarkhineproject@gmail.com",
       to: email,
-      subject: "پاسخ ایمیل شما از طرف سایت فلان",
+      subject: "پاسخ ایمیل شما از طرف سایت ترخینه",
       text: answer,
     };
     const contact = await ContactModel.findOneAndUpdate({ email: email }, { answer: true });

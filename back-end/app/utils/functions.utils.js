@@ -5,10 +5,7 @@ const createHttpError = require("http-errors");
 const path = require("path");
 const fs = require("fs");
 const ProductModel = require("../http/models/product/product.model");
-const courseModel = require("../http/models/course/course.model");
 const { default: mongoose } = require("mongoose");
-const CourseModel = require("../http/models/course/course.model");
-// const ProductModel = require("../http/models/product/product.model");
 
 function RandomNumberGenerator() {
   return ~~(Math.random() * 90000 + 10000);
@@ -91,12 +88,6 @@ async function checkExistProduct(id) {
   return product;
 }
 
-async function checkExistCourse(id) {
-  const course = await CourseModel.findById(id);
-  if (!course) throw createHttpError.NotFound("دوره مورد نظر یافت نشد");
-  return course;
-}
-
 async function getBasketOfUser(userID, discount = {}) {
   const userDetail = await UserModel.aggregate([
     {
@@ -111,14 +102,6 @@ async function getBasketOfUser(userID, discount = {}) {
         localField: "basket.products.productID",
         foreignField: "_id",
         as: "productDetail",
-      },
-    },
-    {
-      $lookup: {
-        from: "courses",
-        localField: "basket.courses.courseID",
-        foreignField: "_id",
-        as: "courseDetail",
       },
     },
 
@@ -144,23 +127,9 @@ async function getBasketOfUser(userID, discount = {}) {
             lang: "js",
           },
         },
-        courseDetail: {
-          $function: {
-            body: function (courseDetail) {
-              return courseDetail.map(function (course) {
-                return {
-                  ...course,
-                  finalPrice: course.price - (course.discount / 100) * course.price,
-                };
-              });
-            },
-            args: ["$courseDetail"],
-            lang: "js",
-          },
-        },
         payDetail: {
           $function: {
-            body: function (courseDetail, productDetail, products) {
+            body: function (productDetail, products) {
               const productAmount = productDetail.reduce(function (total, product) {
                 const count = products.find(
                   (item) => item.productID.valueOf() == product._id.valueOf()
@@ -169,21 +138,14 @@ async function getBasketOfUser(userID, discount = {}) {
                 return total + (totalPrice - (product.discount / 100) * totalPrice);
               }, 0);
 
-              const courseAmount = courseDetail.reduce(function (total, course) {
-                return total + (course.price - (course.discount / 100) * course.price);
-              }, 0);
-
               const productIds = productDetail.map((product) => product._id.valueOf());
-              const courseIds = courseDetail.map((course) => course._id.valueOf());
               return {
                 productAmount,
-                courseAmount,
-                paymentAmount: productAmount + courseAmount,
+                paymentAmount: productAmount,
                 productIds,
-                courseIds,
               };
             },
-            args: ["$courseDetail","$productDetail", "$basket.products"],
+            args: ["$productDetail", "$basket.products"],
             lang: "js",
           },
         },
@@ -217,14 +179,6 @@ function getTime(seconds) {
   return `${hour} : ${minutes} : ${second}`;
 }
 
-const findCourseById = async (id) => {
-  if (!mongoose.isValidObjectId(id))
-    throw createHttpError.BadRequest("شناسه ارسال شده صحیح نمیباشد");
-  const course = await courseModel.findById(id);
-  if (!course) throw createHttpError.NotFound("دوره ای یافت نشد");
-  return course;
-};
-
 const UtilsFunctions = {
   RandomNumberGenerator,
   SignAccessToken,
@@ -236,8 +190,6 @@ const UtilsFunctions = {
   checkExistProduct,
   getBasketOfUser,
   getTime,
-  findCourseById,
-  checkExistCourse,
 };
 
 module.exports = UtilsFunctions;

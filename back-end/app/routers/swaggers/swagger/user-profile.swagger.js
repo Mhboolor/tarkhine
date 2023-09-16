@@ -24,20 +24,6 @@
 
 /**
  * @swagger
- *  /profile/bookmark-blog : 
- *      get : 
- *          tags : [UserProfile]
- *          summary : get bookmark blog of user
- *          responses : 
- *              200 : 
- *                  description : success
- *                  content :
- *                      application/json :
- *                          schema :
- *                              $ref : '#/definitions/GetBookmarked'
- */
-/**
- * @swagger
  *  /profile/bookmark-product : 
  *      get : 
  *          tags : [UserProfile]
@@ -49,21 +35,6 @@
  *                      application/json :
  *                              schema :
  *                                  $ref : '#/definitions/GetBookmarkedProduct'
- */
-
-/**
- * @swagger
- *  /profile/bookmark-course : 
- *      get : 
- *          tags : [UserProfile]
- *          summary : get bookmark course of user
- *          responses : 
- *              200 : 
- *                  description : success
- *                  content : 
- *                      application/json :
- *                              schema :
- *                                  $ref : '#/definitions/GetBookmarked'
  */
 
 /**

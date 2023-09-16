@@ -24,32 +24,7 @@
  *                      description : product for create off
  *
  */
-/**
- * @swagger
- *  components :
- *      schemas :
- *          CreateOffForCourse :
- *              type : object
- *              required :
- *                  -   code
- *                  -   percent
- *                  -   max
- *                  -   course
- *              properties :
- *                  code :
- *                      type : string
- *                      description : code for create off
- *                  percent :
- *                      type : string
- *                      description : percent for create off
- *                  max :
- *                      type : number
- *                      description : max for create off
- *                  course :
- *                      type : string
- *                      description : course for create off
- *
- */
+
 /**
  * @swagger
  *  components :
@@ -64,20 +39,7 @@
  *                      description : product for create off
  *
  */
-/**
- * @swagger
- *  components :
- *      schemas :
- *          GetOneOfCourse :
- *              type : object
- *              required :
- *                  -   course
- *              properties :
- *                  course :
- *                      type : string
- *                      description : course for create off
- *
- */
+
 /**
  * @swagger
  *  components :
@@ -116,29 +78,7 @@
  *                          schema :
  *                              $ref : '#/definitions/CreateOff'
  */
-/**
- * @swagger
- *  /admin/off/add-course :
- *      post :
- *          tags : [Off]
- *          summary : create Off for course
- *          requestBody :
- *              required : true
- *              content :
- *                  application/x-www-form-urlencoded :
- *                      schema :
- *                          $ref : '#/components/schemas/CreateOffForCourse'
- *                  application/json :
- *                      schema :
- *                          $ref : '#/components/schemas/CreateOffForCourse'
- *          responses :
- *              201 :
- *                  description : create - off created
- *                  content : 
- *                      application/json :
- *                          schema :
- *                              $ref : '#/definitions/CreateOff'
- */
+
 /**
  * @swagger
  *  /admin/off/set-all :
@@ -190,41 +130,13 @@
  *                          schema :
  *                              $ref : '#/definitions/getOff'
  */
-/**
- * @swagger
- *  /admin/off/get-one-course/{code} :
- *      post :
- *          tags : [Off]
- *          summary : get one of course
- *          parameters :
- *              -   in : path
- *                  name : code
- *                  type : string
- *                  required : true
- *          requestBody :
- *              required : true
- *              content :
- *                  application/x-www-form-urlencoded :
- *                      schema :
- *                          $ref : '#/components/schemas/GetOneOfCourse'
- *                  application/json :
- *                      schema :
- *                          $ref : '#/components/schemas/GetOneOfCourse'
- *          responses :
- *              200 :
- *                  description : success
- *                  content : 
- *                      application/json :
- *                          schema :
- *                              $ref : '#/definitions/getOff'
- */
 
 /**
  * @swagger
  *  /admin/off/list :
  *      get :
  *          tags : [Off]
- *          summary : list Off product and course
+ *          summary : list Off product
  *          responses :
  *              200 :
  *                  description : success
@@ -239,7 +151,7 @@
  *  /admin/off/remove/{id} :
  *      delete :
  *          tags : [Off]
- *          summary : remove Off form product or course
+ *          summary : remove Off form product
  *          parameters :
  *              -   in : path
  *                  name : id

@@ -2,15 +2,8 @@ const ProfileController = require("../../http/controllers/user-profile/user-prof
 
 const ProfileRoutes = require("express").Router();
 
-ProfileRoutes.get("/bookmark-blog", ProfileController.getUserBookmarkedBlogs);
-ProfileRoutes.get(
-  "/bookmark-product",
-  ProfileController.getUserBookmarkedProducts
-);
-ProfileRoutes.get(
-  "/bookmark-course",
-  ProfileController.getUserBookmarkedCourses
-);
+ProfileRoutes.get("/bookmark-product", ProfileController.getUserBookmarkedProducts);
+
 ProfileRoutes.get("/basket", ProfileController.getUserBasket);
 ProfileRoutes.patch("/update-profile", ProfileController.updateUserProfile);
 

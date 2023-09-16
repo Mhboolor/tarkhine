@@ -3,9 +3,6 @@ const checkPermission = require("../../../http/middlewares/permission.guard");
 const { PERMISSIONS } = require("../../../utils/constans.utils");
 
 const commentRoutes = require("express").Router();
-
-commentRoutes.post("/add-comment-blog", CommentController.createCommentForBlog);
-commentRoutes.post("/add-comment-course", CommentController.createCommentForCourse);
 commentRoutes.post("/add-comment-product", CommentController.createCommentForProduct);
 commentRoutes.get("/list", CommentController.getAllComments);
 commentRoutes.patch("/show/:id",checkPermission([PERMISSIONS.ADMIN]), CommentController.showComment);

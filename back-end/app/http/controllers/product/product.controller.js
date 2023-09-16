@@ -193,7 +193,7 @@ exports.getOneProduct = async (req, res, next) => {
         message: "محصول مورد نظر با موفقیت بازگردانی شد",
         ...product,
         comments,
-        courseAverageScore: Math.floor(productTotalScore / (productScores.length + 1)),
+        productAverageScore: Math.floor(productTotalScore / (productScores.length + 1)),
       },
     });
   } catch (err) {
@@ -395,7 +395,7 @@ exports.searchOfProduct = async (req, res, next) => {
           message: "بنا به جستجوی مورد نظر اطلاعات بازگردانده شدند",
           ...product,
           productComments,
-          courseAverageScore: Math.floor(productTotalScore / (productScores.length + 1)),
+          productAverageScore: Math.floor(productTotalScore / (productScores.length + 1)),
         },
       });
     } else {
@@ -455,7 +455,7 @@ exports.searchOfProduct = async (req, res, next) => {
         allProducts.push({
           ...product,
           productComments,
-          courseAverageScore: Math.floor(productTotalScore / (productScores.length + 1)),
+          productAverageScore: Math.floor(productTotalScore / (productScores.length + 1)),
         });
       });
 
@@ -554,16 +554,16 @@ exports.bookmarkedProduct = async (req, res, next) => {
     const { productID } = req.params;
     const user = req.user;
     await findProductWitId(productID);
-    const bookmarkedBlog = await ProductModel.findOne({
+    const bookmarkProduct = await ProductModel.findOne({
       _id: productID,
       bookmarks: user._id,
     });
-    const updateQuery = bookmarkedBlog
+    const updateQuery = bookmarkProduct
       ? { $pull: { bookmarks: user._id } }
       : { $push: { bookmarks: user._id } };
     await ProductModel.updateOne({ _id: productID }, updateQuery);
     let message;
-    if (!bookmarkedBlog) message = "محصول مورد نظر به لیست علاقه مندی های شما اضافه شد";
+    if (!bookmarkProduct) message = "محصول مورد نظر به لیست علاقه مندی های شما اضافه شد";
     else message = "محصول مورد نظر از لیست علاقه مندی های شما حذف شد";
     return res.status(HttpStatus.OK).json({
       statusCode: HttpStatus.OK,

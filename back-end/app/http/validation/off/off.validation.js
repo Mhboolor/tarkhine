@@ -24,11 +24,6 @@ const getOneOff = Joi.object({
   product: Joi.string().error(createHttpError.BadRequest("شناسه محصول جهت تخفیف صحیح نمی باشد")),
 });
 
-const getOneOffOfCourse = Joi.object({
-  code: Joi.string().error(createHttpError.BadRequest("کد ارسال شده صحیح نمی باشد")),
-  course: Joi.string().error(createHttpError.BadRequest("شناسه دوره جهت تخفیف صحیح نمی باشد")),
-});
-
 const setDiscountOnAll = Joi.object({
   discount: Joi.number()
     .min(0)
@@ -40,7 +35,6 @@ const OffValidation = {
   createOff,
   getOneOff,
   setDiscountOnAll,
-  getOneOffOfCourse,
 };
 
 module.exports = OffValidation;
