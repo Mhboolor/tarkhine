@@ -15,7 +15,7 @@ const Button = ({
       relative
       left-0
       border
-      flex items-center gap-2
+      ${icon && 'flex items-center gap-2'}
       bg-${bgColor} 
       py-${py}
       px-${px}
@@ -24,6 +24,7 @@ const Button = ({
       text-${textSize}
       rounded-4
       ${width}'
+      text-center
       `}
     >
       {icon}
