@@ -59,6 +59,7 @@ export default {
         primary: "#417F56",
         white: "#ffffff",
         black: "#0C0C0C",
+        gold: "#f4b740",
 
         error: "#C30000",
         "error-light": "#ED2E2E",
