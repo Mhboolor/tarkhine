@@ -11,9 +11,9 @@ function Complete() {
         <CompleteRightCenter />
         <CompleteRightBottom />
       </div>
-      <div className="rounded-md border border-gray-4 gap-5 px-10 py-5 flex flex-col justify-between w-5/12">
+      
         <CompleteLeft />
-      </div>
+      
     </div>
   )
 }

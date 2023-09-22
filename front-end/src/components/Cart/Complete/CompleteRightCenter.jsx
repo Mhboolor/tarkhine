@@ -4,14 +4,14 @@ import { AiOutlinePlusCircle } from 'react-icons/ai'
 
 const CompleteRightCenter = () => {
     return (
-        <div className="rounded-md border border-gray-4 gap-5 md:px-10 md:py-7 px-4 py-2 flex flex-col w-full">
-            <div className="flex justify-between relative after:bg-gray-5 w-full after:absolute after:-bottom-5 after:w-full after:h-[1px]">
+        <div className="rounded-md border border-gray-4 gap-5 md:px-6 md:py-7 px-4 py-6 flex flex-col w-full">
+            <div className="flex justify-between relative after:bg-gray-4 w-full after:absolute after:-bottom-5 md:after:-bottom-3 after:w-full after:h-[1px]">
                 <span className="flex items-center gap-1">
-                    <HiOutlineLocationMarker className = 'text-body-md'/>
-                    <span className="text-body-sm">آدرس ها</span>
+                    <HiOutlineLocationMarker className = 'text-body-md md:text-h4'/>
+                    <span className="text-body-sm md:text-body-md">آدرس ها</span>
                 </span>
                 <span className='text-primary flex items-center gap-1'>
-                    <AiOutlinePlusCircle className='text-body-sm' />
+                    <AiOutlinePlusCircle className='md:text-h6' />
                     <span className='text-caption-md'>افزودن آدرس</span>
                 </span>
             </div>
