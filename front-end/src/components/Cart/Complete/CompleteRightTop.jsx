@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BsBag, BsTruck } from 'react-icons/bs'
 import { FaTruckArrowRight } from 'react-icons/fa6'
 
 const CompleteRightTop = () => {
+    const [isCourierClicked, setIsCourierClicked] = useState(true)
+    const [isByPersonClicked, setIsByPersonClicked] = useState(false)
+
+    const courierClickHandler = () => {
+        setIsCourierClicked(prev => prev = !prev)
+        setIsByPersonClicked(false)
+    }
+    const byPersonClickHandler = () => {
+        setIsByPersonClicked(prev => prev = !prev)
+        setIsCourierClicked(false)
+    }
+
     return (
         <>
             <div className="rounded-md border border-gray-4 flex flex-col md:flex-row justify-between md:px-10 md:py-7 px-4 py-2 md:items-center">
@@ -12,12 +24,12 @@ const CompleteRightTop = () => {
                 </div>
                 <div className='text-caption-md text-gray-6'>
                     <div className='flex items-center gap-1'>
-                        <input type="checkbox" className='w-4 h-4 border border-gray-4 outline-none' />
+                        <span onClick={courierClickHandler} className={`w-3 h-3 p-1  rounded-full ${isCourierClicked ? 'bg-success-light' : 'border border-gray-4'}`}></span>
                         <span>ارسال توسط پیک</span>
                         <FaTruckArrowRight />
                     </div>
                     <div className='flex items-center gap-1'>
-                        <input type="checkbox" />
+                        <span onClick={byPersonClickHandler} className={`w-3 h-3 p-1   rounded-full ${isByPersonClicked ? 'bg-success-light' : 'border border-gray-4'}`}></span>
                         <span>تحویل حضوری</span>
                         <BsBag />
                     </div>
