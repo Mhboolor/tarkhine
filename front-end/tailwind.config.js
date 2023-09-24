@@ -68,9 +68,9 @@ export default {
         "success-light": "#00BA88",
         "success-extralight": "#F3FDFA",
 
-        warning: "#00966D",
-        "warning-light": "#00BA88",
-        "warning-extralight": "#F3FDFA",
+        warning: "#A9791C",
+        "warning-light": "#F4B740",
+        "warning-extralight": "#FFF8E1",
 
         tint: {
           1: "#E5F2E9",

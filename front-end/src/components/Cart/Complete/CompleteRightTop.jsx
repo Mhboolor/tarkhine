@@ -30,7 +30,9 @@ const CompleteRightTop = () => {
                     className='
                     text-caption-md text-gray-6 flex flex-row w-full items-center gap-2 pt-1
                     md:text-body-sm md:justify-center '>
-                    <span onClick={courierClickHandler} className={`w-3 h-3 p-1  rounded-full ${isCourierClicked ? 'bg-success-light' : 'border border-gray-4'}`}></span>
+                    <span onClick={courierClickHandler} className={`w-3 h-3 p-[1px] rounded-full border border-gray-4`}>
+                        <span className={`w-full h-full rounded-full bg-success-light ${isCourierClicked ? 'block' : 'hidden'}`}></span>
+                    </span>
                     <span className='flex flex-col items-start'>
                         <span className='text-caption-md md:text-body-sm'>ارسال توسط پیک</span>
                         <span className='hidden md:block text-caption-sm'>توسط پیک رستوران ارسال شود.</span>
@@ -40,7 +42,9 @@ const CompleteRightTop = () => {
                 <div
                     className='text-caption-md text-gray-6 flex flex-row w-full items-center gap-2 pt-1
                     md:text-body-sm md:justify-center'>
-                    <span onClick={byPersonClickHandler} className={`w-3 h-3 p-1   rounded-full ${isByPersonClicked ? 'bg-success-light' : 'border border-gray-4'}`}></span>
+                    <span onClick={byPersonClickHandler} className={`w-3 h-3 p-[1px] rounded-full border border-gray-4`}>
+                        <span className={`w-full h-full rounded-full bg-success-light ${isByPersonClicked ? 'block' : 'hidden'}`}></span>
+                    </span>
                     <span className='flex flex-col items-start'>
                         <span className='text-caption-md md:text-body-sm'>تحویل حضوری</span>
                         <span className='hidden md:block text-caption-sm'>توسط پیک رستوران ارسال شود.</span>
