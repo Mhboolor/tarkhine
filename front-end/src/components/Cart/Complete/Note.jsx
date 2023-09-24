@@ -1,5 +1,5 @@
 
-const CompleteRightBottom = () => {
+const Note = () => {
     return (
         <div className="rounded-md border border-gray-4 w-full h-38 px-4 py-6">
             <div className="w-full h-full">
@@ -13,4 +13,4 @@ const CompleteRightBottom = () => {
     )
 }
 
-export default CompleteRightBottom
+export default Note

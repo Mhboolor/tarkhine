@@ -2,17 +2,19 @@ import React, { useState } from 'react'
 import { BsBag, BsTruck } from 'react-icons/bs'
 import { FaTruckArrowRight } from 'react-icons/fa6'
 
-const CompleteRightTop = () => {
+const ChooseDelivery = (props) => {
     const [isCourierClicked, setIsCourierClicked] = useState(true)
     const [isByPersonClicked, setIsByPersonClicked] = useState(false)
 
     const courierClickHandler = () => {
         setIsCourierClicked(prev => prev = !prev)
         setIsByPersonClicked(false)
+        props.deliveryChangeHandler()
     }
     const byPersonClickHandler = () => {
         setIsByPersonClicked(prev => prev = !prev)
         setIsCourierClicked(false)
+        props.deliveryChangeHandler()
     }
 
     return (
@@ -56,4 +58,4 @@ const CompleteRightTop = () => {
     )
 }
 
-export default CompleteRightTop
+export default ChooseDelivery

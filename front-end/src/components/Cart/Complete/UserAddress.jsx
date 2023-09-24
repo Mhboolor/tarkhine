@@ -4,7 +4,7 @@ import AddressCard from './AddressCard'
 
 
 
-const CompleteRightCenter = () => {
+const UserAddress = () => {
     const userAddress = [
         {
             id: 1,
@@ -62,4 +62,4 @@ const CompleteRightCenter = () => {
     )
 }
 
-export default CompleteRightCenter
+export default UserAddress

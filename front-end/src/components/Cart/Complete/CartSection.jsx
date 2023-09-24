@@ -2,7 +2,7 @@ import Button from "../../common/Button/Button"
 import { BsTrash } from 'react-icons/bs';
 import { PiWarningOctagon } from 'react-icons/pi'
 
-const CompleteLeft = () => {
+const CartSection = () => {
     return (
         <div className="w-full flex flex-col gap-5 text-body-sm px-6 py-6 rounded-md border border-gray-4 justify-between md:w-5/12 h-full">
             <div
@@ -50,4 +50,4 @@ const CompleteLeft = () => {
     )
 }
 
-export default CompleteLeft
+export default CartSection
