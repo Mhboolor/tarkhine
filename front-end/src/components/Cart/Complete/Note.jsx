@@ -1,9 +1,11 @@
+import { BiNotepad } from 'react-icons/bi'
 
 const Note = () => {
     return (
         <div className="rounded-md border border-gray-4 w-full h-38 px-4 py-6">
             <div className="w-full h-full">
                 <div className="flex gap-1 w-full justify-start text-gray-6 items-center">
+                    <BiNotepad className='text-h6 md:text-h4'/>
                     <span className="text-body-sm md:text-body-md">توضیحات سفارش</span>
                     <span className="text-caption-sm md:text-caption-md">(اختیاری)</span>
                 </div>

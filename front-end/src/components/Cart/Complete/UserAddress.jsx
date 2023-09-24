@@ -50,7 +50,7 @@ const UserAddress = () => {
             {userAddress.length > 0 ?
                 <div className='grid grid-cols-1 md:grid-cols-2 w-full pt-4 md:pt-6 gap-2 md:gap-4'>
                     {userAddress.map(item => (
-                        <AddressCard {...item} />
+                        <AddressCard {...item} key={item.id}/>
                     ))}
                 </div> :
                 <div className="flex justify-center items-center h-48 w-full p-4 relative">
