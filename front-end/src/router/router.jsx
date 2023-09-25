@@ -8,6 +8,8 @@ import Cart from "../pages/Cart";
 import Pay from "../components/Cart/Pay/Pay";
 import Complete from "../components/Cart/Complete/Complete";
 import ShoppingCart from "../components/Cart/CartContent/ShoppingCart";
+import AddBranch from "../pages/AddBranch";
+import AboutUs from "../pages/AboutUs";
 
 export const router = createBrowserRouter([
   {
@@ -15,9 +17,11 @@ export const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error404 />,
     children: [
-      { path: "/", element: <Home />},  
+      { path: "/", element: <Home /> },
       { path: "/branch", element: <Branch /> },
-      { path: "/menu", element: <Menu />},
+      { path: "/add-branch", element: <AddBranch /> },
+      { path: "/about-us", element: <AboutUs /> },
+      { path: "/menu", element: <Menu /> },
       { path: "/branch", element: <Branch /> },
       {
         path: "/cart",
