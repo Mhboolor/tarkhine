@@ -10,6 +10,7 @@ import Complete from "../components/Cart/Complete/Complete";
 import ShoppingCart from "../components/Cart/CartContent/ShoppingCart";
 import AddBranch from "../pages/AddBranch";
 import AboutUs from "../pages/AboutUs";
+import ContactUs from "../pages/ContactUs";
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ export const router = createBrowserRouter([
       { path: "/branch", element: <Branch /> },
       { path: "/add-branch", element: <AddBranch /> },
       { path: "/about-us", element: <AboutUs /> },
+      { path: "/contact-us", element: <ContactUs /> },
       { path: "/menu", element: <Menu /> },
       { path: "/branch", element: <Branch /> },
       {
