@@ -4,7 +4,7 @@ import { PiWarningOctagon } from "react-icons/pi";
 
 const CartSection = ({ products }) => {
   return (
-    <div className="w-full flex flex-col text-body-sm px-6 py-6 rounded-md border border-gray-4 justify-between md:w-5/12 h-full divide-y">
+    <div className="w-full flex flex-col text-body-sm p-6 rounded-md border border-gray-4 justify-between h-full divide-y">
       <div
         className="
                 justify-between items-center w-full hidden py-4

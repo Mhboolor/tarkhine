@@ -7,6 +7,7 @@ import Menu from "../pages/Menu";
 import Cart from "../pages/Cart";
 import Pay from "../components/Cart/Pay/Pay";
 import Complete from "../components/Cart/Complete/Complete";
+import ShoppingCart from "../components/Cart/CartContent/ShoppingCart";
 
 export const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ export const router = createBrowserRouter([
         path: "/cart",
         element: <Cart />,
         children: [
-          { path: "/", element: <Complete /> },
+          { path: "", element: <ShoppingCart /> },
           { path: "complete-info", element: <Complete /> },
           { path: "pay", element: <Pay /> },
         ],

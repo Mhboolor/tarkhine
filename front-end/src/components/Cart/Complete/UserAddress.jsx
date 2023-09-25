@@ -34,7 +34,7 @@ const UserAddress = () => {
         }
     ]
     return (
-        <div className="rounded-md border border-gray-4 gap-5 md:px-6 md:py-7 px-4 py-6 flex flex-col w-full">
+        <div className="rounded-md border border-gray-4 gap-5 md:px-6 md:py-7 px-4 py-6 flex flex-col w-full flex-1">
             <div className="flex justify-between relative after:bg-gray-4 w-full after:absolute after:-bottom-5 md:after:-bottom-3 after:w-full after:h-[1px]">
                 <span className="flex items-center gap-1">
                     <HiOutlineLocationMarker className='text-body-md md:text-h4' />

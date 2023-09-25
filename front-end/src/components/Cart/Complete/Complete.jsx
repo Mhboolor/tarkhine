@@ -14,7 +14,7 @@ function Complete() {
   }
   return (
     <div className="flex gap-4 w-full flex-col md:flex-row">
-      <div className="md:w-7/12 w-full flex flex-col gap-8">
+      <div className="w-full flex flex-col gap-8">
         <ChooseDelivery deliveryChangeHandler= {deliveryChangeHandler} />
         {isInPersonClicked ? <UserAddress /> : <BranchAddress />}
         <Note />
