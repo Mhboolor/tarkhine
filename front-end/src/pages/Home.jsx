@@ -1,6 +1,7 @@
 import HeroSlider from "../components/common/heroSlider/HeroSlider";
 import SearchBox from "../components/common/searchBox/SearchBox";
 import Menu from "../components/Home/Menu";
+import Resturant from "../components/Home/Resturant";
 import TarkhineBranches from "../components/Home/TarkhineBranches/TarkhineBranches";
 
 function Home() {
@@ -44,6 +45,7 @@ function Home() {
       <HeroSlider data={slider} button={"سفارش آنلاین غذا"} />
       <SearchBox px={"4"} lgDisplay={"hidden"} />
       <Menu menu={menu} />
+      <Resturant/>
       <TarkhineBranches />
     </div>
   );
