@@ -22,6 +22,7 @@ export const router = createBrowserRouter([
         path: "/cart",
         element: <Cart />,
         children: [
+          { path: "/", element: <Complete /> },
           { path: "complete-info", element: <Complete /> },
           { path: "pay", element: <Pay /> },
         ],

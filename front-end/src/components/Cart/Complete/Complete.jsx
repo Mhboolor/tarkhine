@@ -1,5 +1,5 @@
 import BranchAddress from "./BranchAddress"
-import CartSection from "./CartSection"
+import CartSection from "../CartSection"
 import ChooseDelivery from "./ChooseDelivery"
 import Note from "./Note"
 import { useSelector, useDispatch } from "react-redux"

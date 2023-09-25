@@ -1,4 +1,4 @@
-import Button from "../../common/Button/Button";
+import Button from "../common/Button/Button";
 import { BsTrash } from "react-icons/bs";
 import { PiWarningOctagon } from "react-icons/pi";
 

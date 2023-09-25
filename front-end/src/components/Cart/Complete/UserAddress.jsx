@@ -2,8 +2,6 @@ import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { AiOutlinePlusCircle } from 'react-icons/ai'
 import AddressCard from './AddressCard'
 
-
-
 const UserAddress = () => {
     const userAddress = [
         {
@@ -54,7 +52,7 @@ const UserAddress = () => {
                     ))}
                 </div> :
                 <div className="flex justify-center items-center h-48 w-full p-4 relative">
-                    <img src="../src/assets/images/cart/spider-tar.png" className="w-max h-full opacity-70" alt="" srcset="" />
+                    <img src="../src/assets/images/cart/spider-tar.png" className="w-max h-full opacity-70" alt="" />
                     <span className="w-full h-full absolute top-[50%] text-body-sm text-gray-6">شما در حال حاضر هیچ آدرسی ثبت نکرده اید!</span>
                 </div>
             }
